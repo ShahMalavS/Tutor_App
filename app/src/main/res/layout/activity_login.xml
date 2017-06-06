@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/zoologo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/zoologo"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/zoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoologo"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Tutor App"
+        android:textColor="#2C3646"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.malav.tutorapp.custom.MyTextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="#00051f"
+        android:textSize="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/zoo"
+        android:layout_marginTop="20dp"
+        />
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/signin"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+
+    <com.malav.tutorapp.custom.MyEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:hint="EMAILID"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textColorHint="#a9b0c3"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a9b0c3"
+        android:layout_marginTop="10dp">
+
+    </LinearLayout>
+
+    <com.malav.tutorapp.custom.MyEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textColorHint="#a9b0c3"
+        android:layout_marginTop="50dp"
+        android:textSize="13dp"
+        android:background="#00000000"
+        android:paddingLeft="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a9b0c3"
+        android:layout_marginTop="10dp">
+    </LinearLayout>
+
+    <com.malav.tutorapp.custom.MyTextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:background="@drawable/round"
+        android:textColor="#CBD1DC"
+        android:gravity="center"
+        android:padding="14dp"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal">
+
+        <com.malav.tutorapp.custom.MyTextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="#2C3646"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_toolbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/list_item_padding_left"
+                android:text="Tutor App"
+                android:textColor="#ff0099cc"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/WizardFormLabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:text="Name: "
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_weight="53"
+                    android:layout_height="wrap_content"
+                    android:text="Malav Shah"
+                    android:layout_gravity="center_vertical"
+                    android:autoLink="email"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/WizardFormLabel"
+                    android:text="Qualification: "
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView android:id="@+id/qualification"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:text="BE in Information Technology"
+                    android:autoLink="phone"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="@dimen/list_item_padding_left"
+                android:textSize="25sp"
+                android:textColor="#ff0099cc"
+                android:text="Contact Us"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/WizardFormLabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:text="Email:"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/email_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="53"
+                    android:autoLink="email"
+                    android:text="malavshah502@gmail.com" />
+
+                <ImageView
+                    android:id="@+id/icon_email"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/email"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"/>
+            <!--
+                        <TextView
+                            style="@style/WizardFormLabel"
+                            android:text="Mobile:"
+                            android:layout_marginTop="10dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/WizardFormLabel"
+                    android:text="Mobile:"
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/mobile1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="40"
+                    android:autoLink="phone"
+                    android:text="9033137266" />
+
+                <ImageView
+                    android:id="@+id/icon_mobile1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/phone"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/mobile2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="40"
+                    android:autoLink="phone"
+                    android:text="7263873940" />
+
+                <ImageView
+                    android:id="@+id/icon_mobile2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/phone"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/WizardFormLabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:text="Website:"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView android:id="@+id/website"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.holistree.in"
+                    android:layout_gravity="center_vertical"
+                    android:autoLink="web"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="@dimen/list_item_padding_left"
+                android:textSize="25sp"
+                android:textColor="#ff0099cc"
+                android:text="Follow Us At"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="10dp"/>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/icon_fa"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/fa"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/icon_tw"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/tw"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/icon_ig"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ig"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/icon_gp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/gp"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.malav.tutorapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.DashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.LoginActivity" />
+        <activity android:name=".main.SignUpActivity" />
+        <activity android:name=".main.ChangePasswordActivity" />
+        <!-- <activity android:name=".main.DashboardActivity"/> -->
+        <activity android:name=".main.MyProfileActivity" />
+        <activity android:name=".main.ForgotPasswordActivity" />
+        <activity android:name=".main.AttendanceSheetActivity" />
+        <activity android:name=".main.ChapterNotesActivity" />
+        <activity android:name=".main.ExamScheduleActivity" />
+        <activity android:name=".main.ExamResultsActivity" />
+        <activity android:name=".main.OnlineResourcesActivity" />
+        <activity android:name=".main.QueriesSolutionsActivity" />
+        <activity android:name=".main.AchievementsActivity" />
+        <activity android:name=".main.AboutUsActivity" />
+        <activity
+            android:name=".main.ApplyLeavesActivity"
+            android:label="@string/title_activity_apply_leaves"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

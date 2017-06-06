@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tope">
+
+        <ImageView
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="left"
+            android:id="@+id/img"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <ImageView
+            android:layout_marginRight="7dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgb"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_setting"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/tope"
+        android:background="@color/colorPrimary">
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/banar1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:view_backgroundColor="@color/windowBackground"
+            app:view_shadowRadius="2dp"
+            app:view_shadowDx="2dp"
+            app:view_shadowDy="0dp"
+            android:layout_gravity="center_horizontal"
+            app:view_borderWidth="4dp"
+            app:view_borderColor="@color/windowBackground" />
+
+    </RelativeLayout>
+
+    <TextView
+          android:id="@+id/earn"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="LISA JOY"
+          android:textColor="#ffffff"
+          android:padding="10dp"
+          android:textStyle="bold"
+          android:layout_below="@id/nav_header_container"  />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/earn" />
+
+    <ListView
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/list"
+        android:layout_below="@id/earn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/dividercolour">
+
+    </ListView>
+
+</RelativeLayout>

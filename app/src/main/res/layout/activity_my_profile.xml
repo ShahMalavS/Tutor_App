@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/feed_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/feed_item_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/review_green"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="Student Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/text_light"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="Name"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:id="@+id/student_name"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Malav Shah" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/text_light"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="School"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:id="@+id/student_school"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TTV" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/text_light"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="Mobile"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:id="@+id/student_number"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9033137266" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/text_light"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="Email"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:id="@+id/student_email"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="malavshah502@gmail.com" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/text_light"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="Std"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:id="@+id/student_standard"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="12" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height_small"
+                    android:orientation="horizontal"
+                    android:baselineAligned="true"
+                    android:paddingLeft="@dimen/list_item_padding_left"
+                    android:paddingRight="@dimen/list_item_padding_right"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:textColor="@color/text_light"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:text="Batch"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:id="@+id/student_batch"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="A" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

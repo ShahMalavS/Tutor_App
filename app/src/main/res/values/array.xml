@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer_labels">
+        <item>@string/title_my_profile</item>
+        <item>@string/title_attendance_sheet</item>
+        <item>@string/title_chapter_notes</item>
+        <item>@string/title_exam_schedule</item>
+        <item>@string/title_exam_results</item>
+        <item>@string/title_online_resources</item>
+        <item>@string/title_queries_solutions</item>
+        <item>@string/title_your_achievements</item>
+        <item>@string/title_change_password</item>
+        <item>@string/title_about_us</item>
+        <item>@string/title_logout</item>
+    </string-array>
+
+</resources>

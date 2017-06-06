@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dividercolour">#00000000</color>
+    <color name="textColor">#F3F3F3</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="review_green">#ff669900</color>
+    <color name="roboto_calendar_background">#BBBBBB</color>
+    <color name="roboto_calendar_circle_1">#e90d0d</color>
+    <color name="roboto_calendar_circle_2">#12ca25</color>
+    <color name="green">#8FCC85</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#F7F7F7</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="text_light">#66000000</color>
+</resources>
